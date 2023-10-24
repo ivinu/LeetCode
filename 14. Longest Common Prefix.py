@@ -16,6 +16,9 @@
 #     0 <= strs[i].length <= 200
 #     strs[i] consists of only lowercase English letters.
 
+# Sort the input list v lexicographically. 
+#This step is necessary because the common prefix should be common to all the strings, so we need to find the common prefix of the first and last string in the sorted list.
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         strs = sorted(strs)
